@@ -11,12 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var diceeImageViewOne: UIImageView!
+    @IBOutlet weak var diceeImageViewTwo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
     
         diceeImageViewOne.image = UIImage(named: "DiceSix")
 
-        
+        diceeImageViewTwo.image = UIImage(named: "DiceTwo")
     }
 
 
