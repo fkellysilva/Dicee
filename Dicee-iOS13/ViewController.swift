@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var diceeImageViewOne: UIImageView!
     @IBOutlet weak var diceeImageViewTwo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -19,7 +20,14 @@ class ViewController: UIViewController {
 
         diceeImageViewTwo.image = UIImage(named: "DiceTwo")
     }
-
+    
+    
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceeImageViewOne.image = UIImage(named: "DiceFour")
+        diceeImageViewTwo.image = UIImage (named: "DiceSix")
+        
+    }
+    
 
 }
 
