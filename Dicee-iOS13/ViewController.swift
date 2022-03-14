@@ -24,28 +24,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-       
-        diceeImageViewOne.image = [
+ 
+        var images: [UIImage] = [
             UIImage(named: "DiceOne")!,
             UIImage(named: "DiceTwo")!,
             UIImage(named: "DiceThree")!,
             UIImage(named: "DiceFour")!,
             UIImage(named: "DiceFive")!,
             UIImage(named: "DiceSix")!
-        ][leftDiceNumber]
+        ]
         
+        diceeImageViewOne.image = images[leftDiceNumber]
         leftDiceNumber=leftDiceNumber + 1
-   
-    
-        diceeImageViewTwo.image=[
-           UIImage(named: "DiceOne")!,
-           UIImage(named: "DiceTwo")!,
-           UIImage(named: "DiceThree")!,
-           UIImage(named: "DiceFour")!,
-           UIImage(named: "DiceFive")!,
-           UIImage(named: "DiceSix")!
-       ][rightDiceNumber]
-       
+
+        diceeImageViewTwo.image = images[rightDiceNumber]
         rightDiceNumber += 1
 
     
